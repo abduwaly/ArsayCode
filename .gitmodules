@@ -1,0 +1,3 @@
+[submodule "charaka-hugo-theme"]
+	path = theme/charaka
+	url = git@github.com:abduwaly/charaka-hugo-theme.git
