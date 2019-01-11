@@ -4,7 +4,7 @@ title = "ArsayCode"
 theme = "charaka-hugo-theme"
 copyright = "&copy; <a href=\"https://github.com/abduwaly\">Abduwaly</a> 2018"
 disqusShortname = "Abduwaly's Place"
-publishdir = "doc"
+publishdir = "docs"
 
 [params]
 
