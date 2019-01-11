@@ -1,4 +1,4 @@
-baseurl = "https://abduwaly.github.io"
+baseurl = "https://abduwaly.github.io/ArsayCode"
 languageCode = "en"
 title = "ArsayCode"
 theme = "charaka-hugo-theme"
@@ -12,17 +12,17 @@ publishdir = "docs"
   style = "zenburn"
 
 [[params.social]]
-  url = "about.html"
+  url = ""
   fa_icon = "fas fa-info"
 
 [[params.social]]
-  url = "https://github.com/natarajmb"
+  url = "https://github.com/abduwaly"
   fa_icon = "fab fa-github"
 
 [[params.social]]
-  url = "https://www.linkedin.com/in/natarajmb/"
+  url = ""
   fa_icon = "fab fa-linkedin-in"
 
 [[params.social]]
-  url = "https://twitter.com/natarajmb"
+  url = ""
   fa_icon = "fab fa-twitter"
