@@ -7,10 +7,22 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>&amp;copy; &lt;a href=&#34;https://github.com/abduwaly&#34;&gt;Abduwaly&lt;/a&gt; 2019</copyright>
-    <lastBuildDate>Sun, 20 Jan 2019 19:27:31 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 15 Jun 2019 15:33:51 +0800</lastBuildDate>
     
 	<atom:link href="https://abduwaly.github.io/ArsayCode/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Functional Programming Fundamental</title>
+      <link>https://abduwaly.github.io/ArsayCode/posts/functional-programming-fundamental/</link>
+      <pubDate>Sat, 15 Jun 2019 15:33:51 +0800</pubDate>
+      
+      <guid>https://abduwaly.github.io/ArsayCode/posts/functional-programming-fundamental/</guid>
+      <description>What is Funtional Programming ?  Functional programming is a programming paradigm a style of building the structure and elements of computer programs — that treats computation as the evaluation of mathematical functions and avoids changing state and mutable data
+&amp;mdash;&amp;mdash; Wikipedia
+ Programming Pradigms ?  Imperative  follow my commands , do this , then that &amp;hellip;
+ Declarative  this is what i want, i don&amp;rsquo;t care how you do it &amp;hellip;</description>
+    </item>
     
     <item>
       <title>Say Hi To The World</title>

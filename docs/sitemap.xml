@@ -3,13 +3,18 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://abduwaly.github.io/ArsayCode/posts/functional-programming-fundamental/</loc>
+    <lastmod>2019-06-15T15:33:51+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://abduwaly.github.io/ArsayCode/posts/sayhitotheworld/</loc>
     <lastmod>2019-01-20T19:27:31+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://abduwaly.github.io/ArsayCode/</loc>
-    <lastmod>2019-01-20T19:27:31+08:00</lastmod>
+    <lastmod>2019-06-15T15:33:51+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -20,7 +25,7 @@
   
   <url>
     <loc>https://abduwaly.github.io/ArsayCode/posts/</loc>
-    <lastmod>2019-01-20T19:27:31+08:00</lastmod>
+    <lastmod>2019-06-15T15:33:51+08:00</lastmod>
     <priority>0</priority>
   </url>
   

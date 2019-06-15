@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+
+<title>Functional Programming Fundamental | ArsayCode</title>
+
+<link rel="stylesheet" href="https://abduwaly.github.io/ArsayCode/css/styles.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" 
+integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/zenburn.min.css" crossorigin="anonymous" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<script src="https://abduwaly.github.io/ArsayCode/js/highlight.js"></script>
+
+
+
+
+
+
+<div class="container">
+    <nav class="navbar level">
+      <div class="navbar-brand">
+          <a class="nav-item" href="https://abduwaly.github.io/ArsayCode"><h1 class="title is-3">ArsayCode</h1></a>
+      </div>           
+      <div class="navbar-menu has-text-centered is-active">
+          <div class="navbar-end is-centered">
+              
+                <a href="https://abduwaly.github.io/about.html">
+                  <span class="icon">
+                    <i class="fas fa-info"></i>
+                  </span>
+                </a>
+              
+                <a href="https://github.com/abduwaly">
+                  <span class="icon">
+                    <i class="fab fa-github"></i>
+                  </span>
+                </a>
+              
+           </div>
+      </div>
+    </nav>
+  </div>
+<div class="container">
+  <h2 class="subtitle is-6">June 15, 2019</h2>
+  <h1 class="subtitle is-size-4-mobile is-size-3-desktop">Functional Programming Fundamental</h1>
+  <div class="content">
+    
+
+<h3 id="what-is-funtional-programming">What is Funtional Programming ?</h3>
+
+<blockquote>
+<p>Functional programming is a programming paradigm a style of building the structure and elements of computer programs — 
+that treats computation as the evaluation of mathematical functions and avoids changing state and mutable data</p>
+
+<p>&mdash;&mdash; Wikipedia</p>
+</blockquote>
+
+<h4 id="programming-pradigms">Programming Pradigms ?</h4>
+
+<ul>
+<li>Imperative</li>
+</ul>
+
+<p>follow my commands , do this , then that &hellip;</p>
+
+<ul>
+<li>Declarative</li>
+</ul>
+
+<p>this is what i want, i don&rsquo;t care how you do it &hellip;</p>
+
+<ul>
+<li>Object-Oriented (a.k.a OO)</li>
+</ul>
+
+<p>keep state to yourself, send/receive messages &hellip;</p>
+
+<ul>
+<li>Functional
+&hellip;</li>
+</ul>
+
+<h4 id="is-there-a-definition-of-functional-programming-language">Is there a definition of Functional Programming Language ?</h4>
+
+<p>No !</p>
+
+<p>There&rsquo;s no accepted definition of functional programming language.</p>
+
+<p>If you define functional language as the language that supports first class functions and lambdas, then yes, JavaScript <em>is</em> a functional language.</p>
+
+<p>If you also consider the factors like support for immutability, algebraic data types, pattern matching, partial application etc then no, JavaScript <em>is not</em> a functional language.</p>
+
+<h4 id="what-the-heck-is-functional-programming-on-earth">What the heck is Functional Programming on earth ?</h4>
+
+<p>No rush ! Let&rsquo;s have a look at these two concept:</p>
+
+<ul>
+<li><p>Pure functions</p></li>
+
+<li><p>Immutability</p></li>
+</ul>
+
+<h4 id="what-is-pure-function">What is pure function ?</h4>
+
+<ul>
+<li><p>It returns the same result if given the same arguments</p></li>
+
+<li><p>It does NOT cause any observable side effects</p></li>
+</ul>
+
+<p>Let&rsquo;s look at the examples of impure functions &amp; side effects as below:</p>
+
+<pre><code class="language-javascript">/* Impure */
+
+let PI = 3.14;
+
+const calculateArea = (radius) =&gt; radius * radius * PI;
+
+calculateArea(10); // returns 314.0
+
+/* Side Effects */
+
+let result = 0;
+
+function sum(x) {
+    result += x;
+    return result;
+}
+
+sum(10); // returns 10, but result===10
+
+</code></pre>
+
+<p>So, is there a way to make them pure ?  - Sure, there is!</p>
+
+<pre><code class="language-javascript">/* Pure */
+
+const calculateArea = (radius, pi) =&gt; radius * radius * pi;
+
+calculateArea(10, 3.14); // returns 314.0
+
+/* No side-effect */
+
+const increment = x =&gt; x + 1;
+
+increment(10); // returns 11
+
+</code></pre>
+
+<h4 id="why-pure-functions">Why pure functions ?</h4>
+
+<ul>
+<li>More predicable, safer</li>
+</ul>
+
+<p>&ndash; same results for same params</p>
+
+<ul>
+<li>Easy to test/debug</li>
+</ul>
+
+<p>&ndash; anything is testable</p>
+
+<p>&ndash; no need to mock anything</p>
+
+<ul>
+<li>Multi-thread programming</li>
+</ul>
+
+<p>&ndash; concurrency ready</p>
+
+<p>&ndash; easy to scale up/down</p>
+
+<h4 id="immutability">Immutability</h4>
+
+<ul>
+<li><p>Unchanging over time or unable to be changed</p></li>
+
+<li><p>No in-place changing, instead replacing</p></li>
+</ul>
+
+<p>Let&rsquo;s have a look at the demos <strong><em>with Mutation</em></strong> &amp; <strong><em>without Mutation</em></strong></p>
+
+<pre><code class="language-javascript">/* Mutation (dangerous!!!) */
+
+const ownerList = [&quot;Yaodong&quot;, &quot;Danna&quot;, &quot;Kun&quot;];
+
+ownerList[2] = ownerList[2] + 'Xi';
+
+ownerList; // [&quot;Yaodong&quot;, &quot;Danna&quot;, &quot;Kun Xi&quot;]
+
+</code></pre>
+
+<pre><code class="language-javascript">/* No mutation (safer) */
+
+const ownerList = [&quot;Yaodong&quot;, &quot;Danna&quot;, &quot;Kun&quot;];
+
+const newOwnerList = ownerList.map(x =&gt; {
+  if (x === &quot;Kun&quot;) { return &quot;Kun Xi&quot; }
+  else { return x; }
+});
+
+
+ownerList; // [&quot;Yaodong&quot;, &quot;Danna&quot;, &quot;Kun&quot;]
+newOwnerList; // [&quot;Yaodong&quot;, &quot;Danna&quot;, &quot;Kun Xi&quot;]
+
+</code></pre>
+
+<p>As we can see, mutations always <em>DANGEROUS</em> !</p>
+
+<p>Instead of inplace changing, replacing it will be much safer.</p>
+
+<h3 id="summary">Summary</h3>
+
+<p>For a beginner of functional programming, <strong><em>pure function</em></strong> and <strong><em>immutability</em></strong> are the top 2 core  concepts !
+Functional programming, as one of the computer programming paradigms, tries to build a <em>stateless</em> world with heaps of pure functions who do only care about the inputs and return a result as its output without any observable side effects. However, the world we&rsquo;re living is a world full of <em>things</em> with states.</p>
+
+<p><em>~ TO BE CONTINUED</em></p>
+
+<hr />
+
+<p><strong><em>Online Slides: <a href="https://abduwaly.github.io/slides/Functional_Programming/#/">https://abduwaly.github.io/slides/Functional_Programming/#/</a></em></strong></p>
+
+<hr />
+
+  </div>
+</div>
+<div class="container has-text-centered">
+    
+</div>
+
+<div class="container has-text-centered">
+  
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+      (function() {
+          
+          
+          if (window.location.hostname == "localhost") return;
+          var d = document, s = d.createElement('script');
+          s.src = 'https://abduwaly.disqus.com/embed.js';
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+      })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+  
+</div>
+<section class="section">
+  <div class="container has-text-centered">
+    <p>&copy; <a href="https://github.com/abduwaly">Abduwaly</a> 2019</p>
+  </div>
+</section>
+
+
