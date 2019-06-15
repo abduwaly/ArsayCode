@@ -162,7 +162,7 @@ _~ TO BE CONTINUED_
 
 ---
 
-***Online Slides: <https://abduwaly.github.io/slides/Functional_Programming/#/>***
+***Online Slides: [Functional_Programming](https://abduwaly.github.io/slides/Functional_Programming/#/>)***
 
 ---
 
