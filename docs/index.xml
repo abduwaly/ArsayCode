@@ -7,10 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>&amp;copy; &lt;a href=&#34;https://github.com/abduwaly&#34;&gt;Abduwaly&lt;/a&gt; 2019</copyright>
-    <lastBuildDate>Sun, 30 Jun 2019 16:30:01 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 28 Apr 2020 19:23:33 +0800</lastBuildDate>
     
 	<atom:link href="https://abduwaly.github.io/ArsayCode/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Feature Toggle vs Rebase Master</title>
+      <link>https://abduwaly.github.io/ArsayCode/posts/feature-toggle-vs-rebase-master/</link>
+      <pubDate>Tue, 28 Apr 2020 19:23:33 +0800</pubDate>
+      
+      <guid>https://abduwaly.github.io/ArsayCode/posts/feature-toggle-vs-rebase-master/</guid>
+      <description>Feature Toggle Way  While a feature in dev  Build toggle; Turn on for Dev &amp;amp; off for Prod; Work on stories &amp;amp; apply toggle to them; PR -&amp;gt; Merge to master -&amp;gt; Verify on Staging; (Iterate story by story)  While the feature ready for release
+ Turn toggle on for Prod; (a commit) Deploy to prod;  While the feature is considered STABLE on Prod
+ Clear toggle &amp;amp; related logic; (i.</description>
+    </item>
     
     <item>
       <title>Quick Intro to Quantum Computers</title>
